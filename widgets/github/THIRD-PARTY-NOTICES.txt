@@ -1,0 +1,31 @@
+Icon path data from GitHub Octicons and Microsoft Fluent UI System Icons.
+
+PullRequest: https://github.com/primer/octicons/blob/main/icons/git-pull-request-16.svg (Git blob a1cb1ef9e5623189ddd0fd16374b4fa2e7eb9737)
+Review: https://github.com/primer/octicons/blob/main/icons/person-16.svg (Git blob a58e1860b31916b85fe1168797b27ef401257b21)
+Failed: https://github.com/primer/octicons/blob/main/icons/x-circle-16.svg (Git blob 837bf4faab18b8ddb2a7feeca39cad24e1b53f76)
+GitHub: https://github.com/primer/octicons/blob/main/icons/mark-github-16.svg (Git blob 0e55a8ef2db1913cb35f81ae09ffdb58b5422319)
+Refresh: https://github.com/microsoft/fluentui-system-icons/blob/main/assets/Arrow%20Clockwise/SVG/ic_fluent_arrow_clockwise_16_regular.svg (Git blob 98676eff95282e341c4d1a6002f5a33a047b97b5)
+External: https://github.com/microsoft/fluentui-system-icons/blob/main/assets/Open/SVG/ic_fluent_open_16_regular.svg (Git blob 4b7f3a64a2e2d19b4acac8aff0ac1ed57745ef26)
+
+MIT License
+
+Copyright (c) 2026 GitHub Inc.
+Copyright (c) 2020 Microsoft Corporation
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
