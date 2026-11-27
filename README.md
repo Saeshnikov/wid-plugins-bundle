@@ -2,8 +2,9 @@
 
 - [Happ Control](widgets/happ/README.md) — shows the local Happ core status and lets you connect or disconnect.
 - [GitHub Activity](widgets/github/README.md) — shows pull requests, review requests, and failed commit statuses.
+- [Codex Limits](widgets/codex/README.md) — shows remaining Codex quota and a countdown ring for each reset window.
 
-Each `widgets/*/MainPlugin.cs` is the source of truth. The `Personal.*` projects generated beside the scripts, their build output, and the local template checkout are not tracked.
+Widget source lives in `widgets/*/`. The `Personal.*` projects generated beside the scripts, their build output, and the local template checkout are not tracked.
 
 ## Build from a clean checkout
 
@@ -19,9 +20,11 @@ Copy-Item .\widgets\happ\MainPlugin.cs .\widgets\happ\Personal.Happ\Personal.Hap
 
 msbuild '.\widgets\github\Personal.GitHub\Personal.GitHub (Package)\Personal.GitHub (Package).wapproj' /restore /p:Configuration=Release /p:Platform=x64 /p:AppxBundle=Never
 msbuild '.\widgets\happ\Personal.Happ\Personal.Happ (Package)\Personal.Happ (Package).wapproj' /restore /p:Configuration=Release /p:Platform=x64 /p:AppxBundle=Never
+
+.\widgets\codex\Install-Widget.ps1 -BuildOnly
 ```
 
-These commands build but do not register either package. No GitHub credentials or running Happ instance are needed for compilation. Use the widget scripts for deployment: they put the generated `plugin.json` and attribution files in the loose package layout before registering it. Both widgets deploy under `%LOCALAPPDATA%\WidBarWidgets`, independently of the repository location.
+These commands build but do not register the packages. No GitHub credentials, running Happ instance, or Codex sign-in are needed for compilation. Use the widget scripts for deployment: they put the generated `plugin.json` and attribution files in the loose package layout before registering it. The widgets deploy under `%LOCALAPPDATA%\WidBarWidgets`, independently of the repository location.
 
 If PowerShell blocks a script extracted from a downloaded archive, review the script and unblock that specific file with `Unblock-File -LiteralPath <script-path>` if you trust it.
 
